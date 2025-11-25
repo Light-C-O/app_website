@@ -7,5 +7,17 @@
     --font-poppins: "Poppins", sans-serif;
 
     /* Colours */
+    --color-uniscan-100: #e5faf8;
+    --color-uniscan-200: #ccf5f1;
+    --color-uniscan-300: #b2f0ea;
+    --color-uniscan-400: #99ebe3;
+    --color-uniscan-500: #7fe6dc;
+    --color-uniscan-600: #66b8b0;
+    --color-uniscan-700: #4c8a84;
+    --color-uniscan-800: #335c58;
+    --color-uniscan-900: #192e2c;
+
+
+
     
 }

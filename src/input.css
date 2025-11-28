@@ -1,23 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @import "tailwindcss";
 
 
 @theme {
     /* Fonts */
-    --font-poppins: "Poppins", sans-serif;
+        /* poppins - main */
+        --font-poppins: "Poppins", sans-serif;
 
     /* Colours */
-    --color-uniscan-100: #e5faf8;
-    --color-uniscan-200: #ccf5f1;
-    --color-uniscan-300: #b2f0ea;
-    --color-uniscan-400: #99ebe3;
-    --color-uniscan-500: #7fe6dc;
-    --color-uniscan-600: #66b8b0;
-    --color-uniscan-700: #4c8a84;
-    --color-uniscan-800: #335c58;
-    --color-uniscan-900: #192e2c;
+        /* uniscan */
+            --color-uniscan-900: #192e2c;
+            --color-uniscan-800: #335c58;
+            --color-uniscan-700: #4c8a84;
+            --color-uniscan-600: #66b8b0;
+            --color-uniscan-500: #7fe6dc;
+            --color-uniscan-400: #99ebe3;
+            --color-uniscan-300: #b2f0ea;
+            --color-uniscan-200: #ccf5f1;
+            --color-uniscan-100: #e5faf8;
 
+        /* pop */
+            --color-pop-900: #0d2c33;
+            --color-pop-800: #1a5866;
+            --color-pop-700: #268499;
+            --color-pop-600: #33b0cc;
+            --color-pop-500: #40dcff;
+            --color-pop-400: #66e3ff;
+            --color-pop-300: #8ceaff;
+            --color-pop-200: #b3f1ff;
+            --color-pop-100: #d9f8ff;
 
+        /* vibe */
+            --color-vibe-900: #0d1933;
+            --color-vibe-800: #1a3166;
+            --color-vibe-700: #264a99;
+            --color-vibe-600: #3362cc;
+            --color-vibe-500: #407bff;
+            --color-vibe-400: #6695ff;
+            --color-vibe-300: #8cb0ff;
+            --color-vibe-200: #b3caff;
+            --color-vibe-100: #d9e5ff;
 
-    
+    /* Spacing */
+        /* para */
+            --spacing-para: 150%;
+            --spacing-title: 120%;
 }

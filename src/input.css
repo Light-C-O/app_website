@@ -44,6 +44,18 @@
 
     /* Spacing */
         /* para */
-            --spacing-para: 150%;
-            --spacing-title: 120%;
+            --spacing-para: 24px;
+        /* title */
+            --spacing-title: 20px;
+
+    /* Text-size */
+        /* heading */
+            --text-head: 68px;
+        /* 2ndheading */
+            --text-2nd: 60px;
+
+    /* Line height */
+        /* desktop - 2nd */
+            --leading-2nd: 70px;
+            --leading-norm: 32px;
 }

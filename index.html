@@ -10,9 +10,10 @@
     <link rel="shortcut icon" href="img/favicon.ico">
 </head>
 <body>
-    <!-- header -->
-    <div class="border-b-2 border-uniscan-900">
-        <nav class="mx-auto flex justify-between items-center max-w-xl  text-uniscan-900 text-2xl mt-4 mb-4 pl-4 pr-4 md:max-w-7xl">
+    
+    <header class="z-10 border-b-2 border-uniscan-900 bg-white sticky top-0">
+        <!-- header -->
+        <nav class=" mx-auto flex justify-between items-center max-w-xl  text-uniscan-900 text-2xl mt-4 mb-4 pl-4 pr-4 md:max-w-7xl">
                 <div class="flex gap-2 items-center font-bold">
                     <!-- Brand logo and name -->
                     <img src="img/logo.svg" alt="brand name">
@@ -22,238 +23,273 @@
                     <p>Features</p>
                     <p>Colleges</p>
                 </div>
+
+                <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
                 <div class="md:hidden">
-                    <img src="img/hamburger.svg" width="24" height="24" alt="hamburger">
+                    <!-- hamburger button -->
+                    <button popovertarget="menu" class=" hover:bg-gray-50 hover:rounded-md pt-2 pb-1 px-2 relative hover:shadow-xs hover:inset-ring-1 inset-ring-gray-300">
+                        <img src="img/hamburger.svg" width="24" height="24" alt="hamburger" class="grid place-self-center-safe">
+                    </button>
+                    <!-- dropdown -->
+                    <div id="menu" popover class="absolute top-15 left-80 mt-2 w-40 bg-white rounded-md shadow-lg 
+                py-2 transition-all duration-200 border-2 border-uniscan-800">
+                        <a href="#" class="block text-base text-center hover:bg-gray-100 hover:text-vibe-600">Features</a>
+                        <a href="#" class="block text-base text-center hover:bg-gray-100 hover:text-vibe-600">Colleges</a>
+                    </div>
                 </div>
+
+                <!-- ttest -->
+                <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+                <el-dropdown class="inline-block">
+                    <button class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-gray-50">
+                        Options
+                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="-mr-1 size-5 text-gray-400">
+                        <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
+                        </svg>
+                    </button>
+
+                    <el-menu anchor="bottom end" popover class="w-56 origin-top-right rounded-md bg-white shadow-lg outline-1 outline-black/5 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+                        <div class="py-1">
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">Account settings</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">Support</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">License</a>
+                        <form action="#" method="POST">
+                            <button type="submit" class="block w-full px-4 py-2 text-left text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">Sign out</button>
+                        </form>
+                        </div>
+                    </el-menu>
+                </el-dropdown> -->
         </nav>
-    </div>
-    <!-- end of header -->
+        <!-- end of navbar -->
+    </header>
     
-    <!-- 1st -->
-    <div class="p-4 mx-auto max-w-xl relative md:max-w-7xl">
-        <div class="md:mb-5">
-            <div class="md:text-center">
-                <p class="capitalize font-bold text-4xl mb-4 md:text-head">Your College Life,<br><span class="bg-linear-to-r from-uniscan-600 to-uniscan-900 bg-clip-text text-transparent">in your pocket</span></p>
-                <p class="text-gray-500 text-lg">A mobile app designed <br class="md:hidden">for students. <br class="md:hidden">By students</p>
-            </div>
-
-            <!-- mobile - download app -->
-            <div class="grid sm:flex gap-2 mt-10 items-center md:hidden">
-                <a href="https://www.apple.com/app-store/">
-                    <img src="img/app_store.svg" alt="apple store" class="rounded-md" width="100">
-                </a>
-                
-                <a href="https://play.google.com/store/games?device=windows">
-                    <img src="img/google_play.svg" alt="google play" width="100" >
-                </a>
-            </div>
-
-            <!-- mobile - teal polygon -->
-            <div class="absolute top-10 right-5 md:hidden">
-                <img src="img/polygon.svg" alt="" width="220" height="120" class="rounded-3xl max-w-full">
-                <!-- the images of the phone -->
-                <div class="absolute bottom-0.5 left-8">
-                    <img src="img/phone_app.svg" alt=""  width="160" height="90" class="max-w-full h-auto">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- desktop format -->
-    <div class="hidden md:block md:bg-uniscan-500 pt-10">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex justify-center">
-                <div class="grid gap-6 text-center flex-1 self-center">
-                    <div class="text-uniscan-900 font-bold text-2nd text-center leading-2nd">Download Now!</div>
-                    <div class="grid gap-2 justify-center lg:flex items-center">
-                        <a href="https://www.apple.com/app-store/">
-                            <img src="img/app_store.svg" alt="apple store" class="rounded-md" width="150">
-                        </a>
-                        <a href="https://play.google.com/store/games?device=windows">
-                            <img src="img/google_play.svg" alt="google play" width="150" >
-                        </a>
-                    </div>
+    <main class="relative">
+        <!-- 1st -->
+        <div class="p-4 mx-auto max-w-xl relative md:max-w-7xl">
+            <div class="md:mb-5">
+                <div class="md:text-center">
+                    <p class="capitalize font-bold text-4xl mb-4 md:text-head">Your College Life,<br><span class="bg-linear-to-r from-uniscan-600 to-uniscan-900 bg-clip-text text-transparent">in your pocket</span></p>
+                    <p class="text-gray-500 text-lg">A mobile app designed <br class="md:hidden">for students. <br class="md:hidden">By students</p>
                 </div>
 
-                <div class="self-end flex-1">
-                    <img src="img/phone_app.svg" alt="images of phone" class="w-full h-auto">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end of 1st -->
-
-    <!-- 2nd -->
-    <div class="bg-uniscan-100 md:bg-white mt-5 sm:mt-15 pt-10 md:mt-0">
-        <div class="flex justify-center gap-3 mx-auto md:justify-start max-w-7xl pl-4">
-            <div class="flex items-center gap-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"><path fill="#7FE6DC" d="M2 8a6 6 0 1 1 12 0A6 6 0 0 1 2 8m6-7a7 7 0 1 0 0 14A7 7 0 0 0 8 1m2.854 5.854a.5.5 0 0 0-.708-.708L7.25 9.043L5.854 7.646a.5.5 0 1 0-.708.708l1.75 1.75a.5.5 0 0 0 .708 0z"/></svg>
-                <p class="font-semibold">100% <br class="md:hidden">Forever Free</p>
-            </div>
-            <div class="flex items-center gap-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"><path fill="#7FE6DC" d="M2 8a6 6 0 1 1 12 0A6 6 0 0 1 2 8m6-7a7 7 0 1 0 0 14A7 7 0 0 0 8 1m2.854 5.854a.5.5 0 0 0-.708-.708L7.25 9.043L5.854 7.646a.5.5 0 1 0-.708.708l1.75 1.75a.5.5 0 0 0 .708 0z"/></svg>
-                <p class="font-semibold">College <br class="md:hidden">Made Easy</p>
-            </div>
-            <div class="flex items-center gap-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
-                    <path fill="#7FE6DC" d="M2 8a6 6 0 1 1 12 0A6 6 0 0 1 2 8m6-7a7 7 0 1 0 0 14A7 7 0 0 0 8 1m2.854 5.854a.5.5 0 0 0-.708-.708L7.25 9.043L5.854 7.646a.5.5 0 1 0-.708.708l1.75 1.75a.5.5 0 0 0 .708 0z"/>
-                </svg>
-                <p class="font-semibold">500+ <br class="md:hidden">Colleges</p>
-            </div>
-        </div>
-        <!-- image -->
-        <div class="grid justify-center md:hidden">
-            <img src="img/learning_illustration.svg" alt="" class="max-w-full h-auto">
-        </div>
-
-        <!-- desktop - image -->
-        <div class="hidden md:grid justify-center">
-            <img src="img/learning_illustration_big.svg" alt="" class="max-w-full h-auto">
-        </div>
-    </div>
-    <!-- end of 2nd -->
-
-    <!-- 3rd -->
-    <div class="md:border-t border-uniscan-500 ">
-        <div class="max-w-xl p-4 mx-auto md:max-w-7xl">
-            <div class="text-center mt-4 mb-10 md:text-start">
-                <div class="capitalize text-4xl font-bold text-uniscan-900 mb-4 space-x-title">Amazing key<br class="hidden"> features. <br class="md:hidden">All free</div>
-                <p class="text-gray-500 text-xl space-x-para">Login as a student or visitor to explore college information.</p>
-            </div>
-            <!-- features cards -->
-            <div class="ml-14 mr-14 grid gap-4 md:grid-cols-2 md:mb-10">
-                <!-- card 1 -->
-                <div class="border-2 border-uniscan-500 rounded-md p-3.5 grid justify-center">
-                    <!-- title and icon -->
-                    <div class="flex justify-between">
-                        <div class="capitalize text-uniscan-900 font-bold text-xl content-center">Choose any college</div>
-                        <div class="p-2 bg-uniscan-500 rounded-lg self-start shrink-0">
-                            <img src="img/college_vector.svg" alt="college_vector">
-                        </div>
-                    </div>
-                    <!-- image illustration -->
-                    <img src="img/choose.svg" alt="choose" class="max-w-full h-auto">
-                    <!-- context -->
-                    <div class="text-xl font-normal text-vibe-900 space-x-para leading-norm">
-                        Find your school from 500+ colleges and universities. Get started in seconds with your campus.
-                    </div>
+                <!-- mobile - download app -->
+                <div class="grid sm:flex gap-2 mt-10 items-center md:hidden">
+                    <a href="https://www.apple.com/app-store/">
+                        <img src="img/app_store.svg" alt="apple store" class="rounded-md" width="100">
+                    </a>
+                    
+                    <a href="https://play.google.com/store/games?device=windows">
+                        <img src="img/google_play.svg" alt="google play" width="100" >
+                    </a>
                 </div>
 
-                <!-- card 2 -->
-                <div class="border-2 border-uniscan-500 rounded-md p-3.5 grid justify-center">
-                    <!-- title and icon -->
-                    <div class="flex justify-between">
-                        <div class="capitalize text-uniscan-900 font-bold text-xl content-center">Smart Calender</div>
-                        <div class="p-2 bg-uniscan-500 rounded-lg self-start shrink-0">
-                            <img src="img/calender_vector.svg" alt="calender_vector">
-                        </div>
-                    </div>
-                    <!-- image illustration -->
-                    <img src="img/online_calendar.svg" alt="online_calendar" class="max-w-full h-auto">
-                    <!-- context -->
-                    <div class="text-xl font-normal text-vibe-900 space-x-para leading-norm">
-                        Visualize your academic life with an integrated calendar that syncs all your classes and deadlines.
-                    </div>
-                </div>
-
-                <!-- card 3 -->
-                <div class="border-2 border-uniscan-500 rounded-md p-3.5 grid justify-center">
-                    <!-- title and icon -->
-                    <div class="flex justify-between">
-                        <div class="capitalize text-uniscan-900 font-bold text-xl content-center">In-built map</div>
-                        <div class="p-2 bg-uniscan-500 rounded-lg self-start shrink-0">
-                            <img src="img/map_vector.svg" alt="map_vector">
-                        </div>
-                    </div>
-                    <!-- image illustration -->
-                    <img src="img/gps_navigator.svg" alt="choose" class="max-w-full h-auto">
-                    <!-- context -->
-                    <div class="text-xl font-normal text-vibe-900 space-x-para leading-norm">
-                        Never lost, always found. Find your way through college life and experience new things and people.
-                    </div>
-                </div>
-
-                <!-- card 4 -->
-                <div class="border-2 border-uniscan-500 rounded-md p-3.5 grid justify-center">
-                    <!-- title and icon -->
-                    <div class="flex justify-between">
-                        <div class="capitalize text-uniscan-900 font-bold text-xl content-center">Class management</div>
-                        <div class="p-2 bg-uniscan-500 rounded-lg self-start shrink-0">
-                            <img src="img/book_vector.svg" alt="book_vector">
-                        </div>
-                    </div>
-                    <!-- image illustration -->
-                    <img src="img/projects.svg" alt="projects" class="max-w-full h-auto">
-                    <!-- context -->
-                    <div class="text-xl font-normal text-vibe-900 space-x-para leading-norm">
-                        Keep all classes in one place. Track the schedules, professors, and locations effortlessly. No stress.
+                <!-- mobile - teal polygon -->
+                <div class="absolute top-10 right-5 md:hidden">
+                    <img src="img/polygon.svg" alt="" width="220" height="120" class="rounded-3xl max-w-full">
+                    <!-- the images of the phone -->
+                    <div class="absolute bottom-0.5 left-8">
+                        <img src="img/phone_app.svg" alt=""  width="160" height="90" class="max-w-full h-auto">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- end of 3rd -->
-
-    <!-- desktop form - 4th & footer -->
-    <div class="grid md:grid-cols-2 md:items-center md:border-t border-uniscan-500">
-        <!-- 4th -->
-        <div class="bg-uniscan-200 md:grid justify-end">
-            <div class=" p-4 pb-0 mt-auto max-w-xl">
-                <div class="text-center mt-4 mb-10 md:text-start">
-                    <div class="capitalize text-4xl font-bold text-uniscan-900 mb-4">
-                        Always Stay Organised. Everywhere. Anywhere
-                    </div>
-                    <p class="text-uniscan-900 text-xl space-x-para">
-                        Join thousands of students across 500+ colleges who are crushing their academic goals!
-                    </p>
-                </div>
-                <!-- images of phone -->
-                <div class="flex justify-center md:justify-end">
-                    <img src="img/phone_app.svg" alt="phone preview" class="w-full max-w-sm md:max-w-md">
-                </div>
-            </div>
-        </div>
-        <!-- end of 4th -->
-
-        <!-- footer -->
-        <div class=" bg-white md:grid justify-start ">
-            <div class="p-4 mx-auto mt-4 mb-10 max-w-xl items-center md:mt-0 md:mb-0">
-                <!-- title -->
-                <div class="capitalize text-4xl font-bold text-uniscan-900 mb-4 space-x-title md:text-center">
-                    Get UniScan on Your Phone Today!
-                </div>
-
-                <!-- info -->
-                <div class="flex gap-4 md:grid">
-                    <div class="grid gap-4 flex-70 md:grid-cols-1 mb-5">
-                        <p class="text-uniscan-900 text-xl space-x-para md:text-center">
-                            The fun and intuitive way to manage your academic journey.
-                        </p>
-                        <a href="https://github.com/Light-C-O" class="flex gap-2 text-base font-medium border-2 border-uniscan-700 p-2 justify-self-start place-self-center rounded-2xl md:hidden">Find me in <img src="img/github_vector.svg" alt="github_vector"></a>
-                    </div>
-                    <div class="grid gap-2 flex-30 place-content-center">
-                        <div class="text-uniscan-900 font-black text-xl text-center md:text-2xl mb-4">Download Now!</div>
-                        <div class="grid gap-2 justify-center md:mb-10">
+        <!-- desktop format -->
+        <div class="hidden md:block md:bg-uniscan-500 pt-10">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex justify-center">
+                    <div class="grid gap-6 text-center flex-1 self-center">
+                        <div class="text-uniscan-900 font-bold text-2nd text-center leading-2nd">Download Now!</div>
+                        <div class="grid gap-2 justify-center lg:flex items-center">
                             <a href="https://www.apple.com/app-store/">
-                                <img src="img/app_store.svg" alt="apple store" class="rounded-md w-20 md:w-40" >
+                                <img src="img/app_store.svg" alt="apple store" class="rounded-md" width="150">
                             </a>
                             <a href="https://play.google.com/store/games?device=windows">
-                                <img src="img/google_play.svg" alt="google play" class="w-20 md:w-40" >
+                                <img src="img/google_play.svg" alt="google play" width="150" >
                             </a>
                         </div>
-
-                        
-                        <a href="https://github.com/Light-C-O" class="hidden md:flex gap-2 text-base font-medium border-2 border-uniscan-700 p-2 place-self-center rounded-2xl justify-self-center">Find me in <img src="img/github_vector.svg" alt="github_vector"></a>
                     </div>
 
+                    <div class="self-end flex-1">
+                        <img src="img/phone_app.svg" alt="images of phone" class="w-full h-auto">
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- end of footer -->
-    </div>
-    <!-- end desktop form - 4th & footer -->
+        <!-- end of 1st -->
 
-    <!-- copyright -->
-    <div class="border-t-2 border-uniscan-900">
+        <!-- 2nd -->
+        <div class="bg-uniscan-100 md:bg-white mt-5 sm:mt-15 pt-10 md:mt-0">
+            <div class="flex justify-center gap-3 mx-auto md:justify-start max-w-7xl pl-4">
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"><path fill="#7FE6DC" d="M2 8a6 6 0 1 1 12 0A6 6 0 0 1 2 8m6-7a7 7 0 1 0 0 14A7 7 0 0 0 8 1m2.854 5.854a.5.5 0 0 0-.708-.708L7.25 9.043L5.854 7.646a.5.5 0 1 0-.708.708l1.75 1.75a.5.5 0 0 0 .708 0z"/></svg>
+                    <p class="font-semibold">100% <br class="md:hidden">Forever Free</p>
+                </div>
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"><path fill="#7FE6DC" d="M2 8a6 6 0 1 1 12 0A6 6 0 0 1 2 8m6-7a7 7 0 1 0 0 14A7 7 0 0 0 8 1m2.854 5.854a.5.5 0 0 0-.708-.708L7.25 9.043L5.854 7.646a.5.5 0 1 0-.708.708l1.75 1.75a.5.5 0 0 0 .708 0z"/></svg>
+                    <p class="font-semibold">College <br class="md:hidden">Made Easy</p>
+                </div>
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                        <path fill="#7FE6DC" d="M2 8a6 6 0 1 1 12 0A6 6 0 0 1 2 8m6-7a7 7 0 1 0 0 14A7 7 0 0 0 8 1m2.854 5.854a.5.5 0 0 0-.708-.708L7.25 9.043L5.854 7.646a.5.5 0 1 0-.708.708l1.75 1.75a.5.5 0 0 0 .708 0z"/>
+                    </svg>
+                    <p class="font-semibold">500+ <br class="md:hidden">Colleges</p>
+                </div>
+            </div>
+            <!-- image -->
+            <div class="grid justify-center md:hidden">
+                <img src="img/learning_illustration.svg" alt="" class="max-w-full h-auto">
+            </div>
+
+            <!-- desktop - image -->
+            <div class="hidden md:grid justify-center">
+                <img src="img/learning_illustration_big.svg" alt="" class="max-w-full h-auto">
+            </div>
+        </div>
+        <!-- end of 2nd -->
+
+        <!-- 3rd -->
+        <div class="md:border-t border-uniscan-500 ">
+            <div class="max-w-xl p-4 mx-auto md:max-w-7xl">
+                <div class="text-center mt-4 mb-10 md:text-start">
+                    <div class="capitalize text-4xl font-bold text-uniscan-900 mb-4 space-x-title">Amazing key<br class="hidden"> features. <br class="md:hidden">All free</div>
+                    <p class="text-gray-500 text-xl space-x-para">Login as a student or visitor to explore college information.</p>
+                </div>
+                <!-- features cards -->
+                <div class="ml-14 mr-14 grid gap-4 md:grid-cols-2 md:mb-10">
+                    <!-- card 1 -->
+                    <div class="border-2 border-uniscan-500 rounded-md p-3.5 grid justify-center">
+                        <!-- title and icon -->
+                        <div class="flex justify-between">
+                            <div class="capitalize text-uniscan-900 font-bold text-xl content-center">Choose any college</div>
+                            <div class="p-2 bg-uniscan-500 rounded-lg self-start shrink-0">
+                                <img src="img/college_vector.svg" alt="college_vector">
+                            </div>
+                        </div>
+                        <!-- image illustration -->
+                        <img src="img/choose.svg" alt="choose" class="max-w-full h-auto">
+                        <!-- context -->
+                        <div class="text-xl font-normal text-vibe-900 space-x-para leading-norm">
+                            Find your school from 500+ colleges and universities. Get started in seconds with your campus.
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="border-2 border-uniscan-500 rounded-md p-3.5 grid justify-center">
+                        <!-- title and icon -->
+                        <div class="flex justify-between">
+                            <div class="capitalize text-uniscan-900 font-bold text-xl content-center">Smart Calender</div>
+                            <div class="p-2 bg-uniscan-500 rounded-lg self-start shrink-0">
+                                <img src="img/calender_vector.svg" alt="calender_vector">
+                            </div>
+                        </div>
+                        <!-- image illustration -->
+                        <img src="img/online_calendar.svg" alt="online_calendar" class="max-w-full h-auto">
+                        <!-- context -->
+                        <div class="text-xl font-normal text-vibe-900 space-x-para leading-norm">
+                            Visualize your academic life with an integrated calendar that syncs all your classes and deadlines.
+                        </div>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="border-2 border-uniscan-500 rounded-md p-3.5 grid justify-center">
+                        <!-- title and icon -->
+                        <div class="flex justify-between">
+                            <div class="capitalize text-uniscan-900 font-bold text-xl content-center">In-built map</div>
+                            <div class="p-2 bg-uniscan-500 rounded-lg self-start shrink-0">
+                                <img src="img/map_vector.svg" alt="map_vector">
+                            </div>
+                        </div>
+                        <!-- image illustration -->
+                        <img src="img/gps_navigator.svg" alt="choose" class="max-w-full h-auto">
+                        <!-- context -->
+                        <div class="text-xl font-normal text-vibe-900 space-x-para leading-norm">
+                            Never lost, always found. Find your way through college life and experience new things and people.
+                        </div>
+                    </div>
+
+                    <!-- card 4 -->
+                    <div class="border-2 border-uniscan-500 rounded-md p-3.5 grid justify-center">
+                        <!-- title and icon -->
+                        <div class="flex justify-between">
+                            <div class="capitalize text-uniscan-900 font-bold text-xl content-center">Class management</div>
+                            <div class="p-2 bg-uniscan-500 rounded-lg self-start shrink-0">
+                                <img src="img/book_vector.svg" alt="book_vector">
+                            </div>
+                        </div>
+                        <!-- image illustration -->
+                        <img src="img/projects.svg" alt="projects" class="max-w-full h-auto">
+                        <!-- context -->
+                        <div class="text-xl font-normal text-vibe-900 space-x-para leading-norm">
+                            Keep all classes in one place. Track the schedules, professors, and locations effortlessly. No stress.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of 3rd -->
+
+        <!-- desktop form - 4th & 5th -->
+        <div class="grid md:grid-cols-2 md:items-center md:border-t border-uniscan-500">
+            <!-- 4th -->
+            <div class="bg-uniscan-200 md:grid justify-end">
+                <div class=" p-4 pb-0 mt-auto max-w-xl">
+                    <div class="text-center mt-4 mb-10 md:text-start">
+                        <div class="capitalize text-4xl font-bold text-uniscan-900 mb-4">
+                            Always Stay Organised. Everywhere. Anywhere
+                        </div>
+                        <p class="text-uniscan-900 text-xl space-x-para">
+                            Join thousands of students across 500+ colleges who are crushing their academic goals!
+                        </p>
+                    </div>
+                    <!-- images of phone -->
+                    <div class="flex justify-center md:justify-end">
+                        <img src="img/phone_app.svg" alt="phone preview" class="w-full max-w-sm md:max-w-md">
+                    </div>
+                </div>
+            </div>
+            <!-- end of 4th -->
+
+            <!-- 5th -->
+            <div class=" bg-white md:grid justify-start ">
+                <div class="p-4 mx-auto mt-4 mb-10 max-w-xl items-center md:mt-0 md:mb-0">
+                    <!-- title -->
+                    <div class="capitalize text-4xl font-bold text-uniscan-900 mb-4 space-x-title md:text-center">
+                        Get UniScan on Your Phone Today!
+                    </div>
+
+                    <!-- info -->
+                    <div class="flex gap-4 md:grid">
+                        <div class="grid gap-4 flex-70 md:grid-cols-1 mb-5">
+                            <p class="text-uniscan-900 text-xl space-x-para md:text-center">
+                                The fun and intuitive way to manage your academic journey.
+                            </p>
+                            <a href="https://github.com/Light-C-O" class="flex gap-2 text-base font-medium border-2 border-uniscan-700 p-2 justify-self-start place-self-center rounded-2xl md:hidden">Find me in <img src="img/github_vector.svg" alt="github_vector"></a>
+                        </div>
+                        <div class="grid gap-2 flex-30 place-content-center">
+                            <div class="text-uniscan-900 font-black text-xl text-center md:text-2xl mb-4">Download Now!</div>
+                            <div class="grid gap-2 justify-center md:mb-10">
+                                <a href="https://www.apple.com/app-store/">
+                                    <img src="img/app_store.svg" alt="apple store" class="rounded-md w-20 md:w-40" >
+                                </a>
+                                <a href="https://play.google.com/store/games?device=windows">
+                                    <img src="img/google_play.svg" alt="google play" class="w-20 md:w-40" >
+                                </a>
+                            </div>
+
+                            
+                            <a href="https://github.com/Light-C-O" class="hidden md:flex gap-2 text-base font-medium border-2 border-uniscan-700 p-2 place-self-center rounded-2xl justify-self-center">Find me in <img src="img/github_vector.svg" alt="github_vector"></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- end of 5th -->
+        </div>
+        <!-- end desktop form - 4th & 5th -->
+    </main>
+    
+    <footer class="border-t-2 border-uniscan-900">
+        <!-- copyright -->
         <div class="max-w-xl p-4 mx-auto md:max-w-7xl">
             <div class="flex gap-2 items-center justify-center mb-4">
                 <img src="img/logo.svg" alt="">
@@ -268,7 +304,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- end of copyright -->
+        <!-- end of copyright -->
+    </footer>
+    
 </body>
 </html>

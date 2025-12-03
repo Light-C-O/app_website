@@ -3,59 +3,90 @@
 @import "tailwindcss";
 
 
-@theme {
-    /* Fonts */
-        /* poppins - main */
-        --font-poppins: "Poppins", sans-serif;
+/* cumtomise */
+    /* themes */
+    @theme {
+        /* Fonts */
+            /* poppins - main */
+            --font-poppins: "Poppins", sans-serif;
 
-    /* Colours */
-        /* uniscan */
-            --color-uniscan-900: #192e2c;
-            --color-uniscan-800: #335c58;
-            --color-uniscan-700: #4c8a84;
-            --color-uniscan-600: #66b8b0;
-            --color-uniscan-500: #7fe6dc;
-            --color-uniscan-400: #99ebe3;
-            --color-uniscan-300: #b2f0ea;
-            --color-uniscan-200: #ccf5f1;
-            --color-uniscan-100: #e5faf8;
+        /* Colours */
+            /* uniscan */
+                --color-uniscan-900: #192e2c;
+                --color-uniscan-800: #335c58;
+                --color-uniscan-700: #4c8a84;
+                --color-uniscan-600: #66b8b0;
+                --color-uniscan-500: #7fe6dc;
+                --color-uniscan-400: #99ebe3;
+                --color-uniscan-300: #b2f0ea;
+                --color-uniscan-200: #ccf5f1;
+                --color-uniscan-100: #e5faf8;
 
-        /* pop */
-            --color-pop-900: #0d2c33;
-            --color-pop-800: #1a5866;
-            --color-pop-700: #268499;
-            --color-pop-600: #33b0cc;
-            --color-pop-500: #40dcff;
-            --color-pop-400: #66e3ff;
-            --color-pop-300: #8ceaff;
-            --color-pop-200: #b3f1ff;
-            --color-pop-100: #d9f8ff;
+            /* pop */
+                --color-pop-900: #0d2c33;
+                --color-pop-800: #1a5866;
+                --color-pop-700: #268499;
+                --color-pop-600: #33b0cc;
+                --color-pop-500: #40dcff;
+                --color-pop-400: #66e3ff;
+                --color-pop-300: #8ceaff;
+                --color-pop-200: #b3f1ff;
+                --color-pop-100: #d9f8ff;
 
-        /* vibe */
-            --color-vibe-900: #0d1933;
-            --color-vibe-800: #1a3166;
-            --color-vibe-700: #264a99;
-            --color-vibe-600: #3362cc;
-            --color-vibe-500: #407bff;
-            --color-vibe-400: #6695ff;
-            --color-vibe-300: #8cb0ff;
-            --color-vibe-200: #b3caff;
-            --color-vibe-100: #d9e5ff;
+            /* vibe */
+                --color-vibe-900: #0d1933;
+                --color-vibe-800: #1a3166;
+                --color-vibe-700: #264a99;
+                --color-vibe-600: #3362cc;
+                --color-vibe-500: #407bff;
+                --color-vibe-400: #6695ff;
+                --color-vibe-300: #8cb0ff;
+                --color-vibe-200: #b3caff;
+                --color-vibe-100: #d9e5ff;
 
-    /* Spacing - not needed */
-        /* para */
-            --spacing-para: 24px;
-        /* title */
-            --spacing-title: 20px;
+        /* Spacing - not needed */
+            /* para */
+                --spacing-para: 24px;
+            /* title */
+                --spacing-title: 20px;
 
-    /* Text-size */
-        /* heading */
-            --text-head: 68px;
-        /* 2ndheading */
-            --text-2nd: 60px;
+        /* Text-size */
+            /* heading */
+                --text-head: 68px;
+            /* 2ndheading */
+                --text-2nd: 60px;
 
-    /* Line height */
-        /* desktop - 2nd */
-            --leading-2nd: 70px;
-            --leading-norm: 32px;
-}
+        /* Line height */
+            /* desktop - 2nd */
+                --leading-2nd: 70px;
+                --leading-norm: 32px;
+    }
+
+    /* components */
+    @layer components {
+
+        /* card */
+        .card {
+            @apply border-2 border-uniscan-500 rounded-md p-3.5 grid justify-center;
+        }
+        .card-between {
+            @apply flex justify-between;
+        }
+        .card-title {
+            @apply capitalize text-uniscan-900 font-bold text-xl content-center;
+        }
+        .card-icon {
+            @apply p-2 bg-uniscan-500 rounded-lg self-start shrink-0;
+        }
+        .card-img {
+            @apply max-w-full h-auto;
+        }
+        .card-context {
+            @apply text-xl font-normal text-vibe-900 space-x-para leading-norm;
+        }
+
+        /* Hover */
+        .text-hover {
+            @apply block px-4 py-2 text-base hover:bg-gray-100 hover:text-vibe-600;
+        }
+    }

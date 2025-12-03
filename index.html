@@ -13,40 +13,20 @@
     
     <header class="z-10 border-b-2 border-uniscan-900 bg-white sticky top-0">
         <!-- header -->
-        <nav class=" mx-auto flex justify-between items-center max-w-xl  text-uniscan-900 text-2xl mt-4 mb-4 pl-4 pr-4 md:max-w-7xl">
+        <nav class=" mx-auto flex justify-between items-center max-w-xl  text-uniscan-900 text-2xl mt-4 mb-2 pl-4 pr-4 md:max-w-7xl">
                 <div class="flex gap-2 items-center font-bold">
                     <!-- Brand logo and name -->
                     <img src="img/logo.svg" alt="brand name">
                     <p class="">UniScan</p>
                 </div>
-                <div class="hidden md:flex text-base gap-4">
-                    <p>Features</p>
-                    <p>Colleges</p>
+                <div class="hidden md:flex text-base">
+                    <a href="#" class="text-hover">Features</a>
+                    <a href="#" class="text-hover">Colleges</a>
                 </div>
 
+                <!-- dropdown -->
                 <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
-                <div class="w-56 inline-block">
-                    <div class="md:hidden grid place-self-end relative">
-                        <!-- hamburger button -->
-                        <button popovertarget="menu" class="hover:bg-gray-50 hover:rounded-md pt-2 pb-1 px-2 hover:shadow-xs hover:inset-ring-1 inset-ring-gray-300" aria-controls="menu" aria-expanded="false" aria-haspopup="true">
-                            <img src="img/hamburger.svg" width="24" height="24" alt="hamburger" class="grid place-self-center-safe" aria-hidden="true">
-                        </button>
-                        <!-- dropdown -->
-                        <div id="menu" popover class="origin-top-right absolute right-0 mt-1 w-56 rounded-md bg-white shadow-lg outline-1 outline-black/5 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
-                            <a href="#" class="block px-4 py-2 text-base hover:bg-gray-100 hover:text-vibe-600 border-b border-pop-400">Features</a>
-                            <a href="#" class="block px-4 py-2 text-base hover:bg-gray-100 hover:text-vibe-600">Colleges</a>
-                        </div>
-                    </div>
- 
-                </div>
-
-                
-                
-                
-
-                <!-- ttest -->
-                <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
-                <el-dropdown class="inline-block">
+                <el-dropdown class="md:hidden inline-block">
                     <button class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-gray-50">
                         <img src="img/hamburger.svg" width="24" height="24" alt="hamburger" class="grid place-self-center-safe" aria-hidden="true">
                         
@@ -54,12 +34,8 @@
 
                     <el-menu anchor="bottom end" popover class="w-56 origin-top-right rounded-md bg-white shadow-lg outline-1 outline-black/5 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
                         <div class="py-1">
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">Account settings</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">Support</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">License</a>
-                        <form action="#" method="POST">
-                            <button type="submit" class="block w-full px-4 py-2 text-left text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">Sign out</button>
-                        </form>
+                        <a href="#" class="text-hover border-pop-700">Features</a>
+                        <a href="#" class="text-hover">Colleges</a>
                         </div>
                     </el-menu>
                 </el-dropdown>
@@ -161,69 +137,69 @@
                 <!-- features cards -->
                 <div class="ml-14 mr-14 grid gap-4 md:grid-cols-2 md:mb-10">
                     <!-- card 1 -->
-                    <div class="border-2 border-uniscan-500 rounded-md p-3.5 grid justify-center">
+                    <div class="card">
                         <!-- title and icon -->
-                        <div class="flex justify-between">
-                            <div class="capitalize text-uniscan-900 font-bold text-xl content-center">Choose any college</div>
-                            <div class="p-2 bg-uniscan-500 rounded-lg self-start shrink-0">
+                        <div class="card-between">
+                            <div class="card-title">Choose any college</div>
+                            <div class="card-icon">
                                 <img src="img/college_vector.svg" alt="college_vector">
                             </div>
                         </div>
                         <!-- image illustration -->
-                        <img src="img/choose.svg" alt="choose" class="max-w-full h-auto">
+                        <img src="img/choose.svg" alt="choose" class="card-img">
                         <!-- context -->
-                        <div class="text-xl font-normal text-vibe-900 space-x-para leading-norm">
+                        <div class="card-context">
                             Find your school from 500+ colleges and universities. Get started in seconds with your campus.
                         </div>
                     </div>
 
                     <!-- card 2 -->
-                    <div class="border-2 border-uniscan-500 rounded-md p-3.5 grid justify-center">
+                    <div class="card">
                         <!-- title and icon -->
-                        <div class="flex justify-between">
-                            <div class="capitalize text-uniscan-900 font-bold text-xl content-center">Smart Calender</div>
-                            <div class="p-2 bg-uniscan-500 rounded-lg self-start shrink-0">
+                        <div class="card-between">
+                            <div class="card-title">Smart Calender</div>
+                            <div class="card-icon">
                                 <img src="img/calender_vector.svg" alt="calender_vector">
                             </div>
                         </div>
                         <!-- image illustration -->
-                        <img src="img/online_calendar.svg" alt="online_calendar" class="max-w-full h-auto">
+                        <img src="img/online_calendar.svg" alt="online_calendar" class="card-img">
                         <!-- context -->
-                        <div class="text-xl font-normal text-vibe-900 space-x-para leading-norm">
+                        <div class="card-context">
                             Visualize your academic life with an integrated calendar that syncs all your classes and deadlines.
                         </div>
                     </div>
 
                     <!-- card 3 -->
-                    <div class="border-2 border-uniscan-500 rounded-md p-3.5 grid justify-center">
+                    <div class="card">
                         <!-- title and icon -->
-                        <div class="flex justify-between">
-                            <div class="capitalize text-uniscan-900 font-bold text-xl content-center">In-built map</div>
-                            <div class="p-2 bg-uniscan-500 rounded-lg self-start shrink-0">
+                        <div class="card-between">
+                            <div class="card-title">In-built map</div>
+                            <div class="card-icon">
                                 <img src="img/map_vector.svg" alt="map_vector">
                             </div>
                         </div>
                         <!-- image illustration -->
-                        <img src="img/gps_navigator.svg" alt="choose" class="max-w-full h-auto">
+                        <img src="img/gps_navigator.svg" alt="navigate" class="card-img">
                         <!-- context -->
-                        <div class="text-xl font-normal text-vibe-900 space-x-para leading-norm">
+                        <div class="card-context">
                             Never lost, always found. Find your way through college life and experience new things and people.
                         </div>
                     </div>
 
                     <!-- card 4 -->
-                    <div class="border-2 border-uniscan-500 rounded-md p-3.5 grid justify-center">
+                    <div class="card">
                         <!-- title and icon -->
-                        <div class="flex justify-between">
-                            <div class="capitalize text-uniscan-900 font-bold text-xl content-center">Class management</div>
-                            <div class="p-2 bg-uniscan-500 rounded-lg self-start shrink-0">
+                        <div class="card-between">
+                            <div class="card-title">Class management</div>
+                            <div class="card-icon">
                                 <img src="img/book_vector.svg" alt="book_vector">
                             </div>
                         </div>
                         <!-- image illustration -->
-                        <img src="img/projects.svg" alt="projects" class="max-w-full h-auto">
+                        <img src="img/projects.svg" alt="projects" class="card-img">
                         <!-- context -->
-                        <div class="text-xl font-normal text-vibe-900 space-x-para leading-norm">
+                        <div class="card-context">
                             Keep all classes in one place. Track the schedules, professors, and locations effortlessly. No stress.
                         </div>
                     </div>

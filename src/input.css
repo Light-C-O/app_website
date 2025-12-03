@@ -78,9 +78,6 @@
         .card-icon {
             @apply p-2 bg-uniscan-500 rounded-lg self-start shrink-0;
         }
-        .card-img {
-            @apply max-w-full h-auto;
-        }
         .card-context {
             @apply text-xl font-normal text-vibe-900 space-x-para leading-norm;
         }
@@ -88,5 +85,9 @@
         /* Hover */
         .text-hover {
             @apply block px-4 py-2 text-base hover:bg-gray-100 hover:text-vibe-600;
+        }
+
+        .img-responsive {
+            @apply max-w-full h-auto;
         }
     }

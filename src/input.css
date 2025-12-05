@@ -56,7 +56,10 @@
             /* 2ndheading */
                 --text-2nd: 60px;
 
-        /* Line height */
+        /* Line height */ 
+            /* paragrapgh */
+                --leading-context: 24px;
+                --leading-paragraph: 20px;
             /* desktop - 2nd */
                 --leading-2nd: 70px;
                 --leading-norm: 32px;
@@ -66,21 +69,37 @@
     @layer components {
 
         /* card */
-        .card {
-            @apply border-2 border-uniscan-500 rounded-md p-3.5 grid justify-center;
-        }
-        .card-between {
-            @apply flex justify-between;
-        }
-        .card-title {
-            @apply capitalize text-uniscan-900 font-bold text-xl content-center;
-        }
-        .card-icon {
-            @apply p-2 bg-uniscan-500 rounded-lg self-start shrink-0;
-        }
-        .card-context {
-            @apply text-xl font-normal text-vibe-900 space-x-para leading-norm;
-        }
+
+            /* index.html */
+                .card {
+                    @apply border-2 rounded-md p-3.5 grid justify-center;
+                }
+                .card-between {
+                    @apply flex justify-between;
+                }
+                .card-title {
+                    @apply capitalize font-bold text-xl content-center;
+                }
+                .card-icon {
+                    @apply p-2 rounded-lg self-start shrink-0;
+                }
+                .card-context {
+                    @apply text-xl font-normal space-x-para leading-norm;
+                }
+            
+            /* features */
+                .f-between {
+                    @apply flex flex-col-reverse gap-2 mb-2;
+                }
+                .f-subcon {
+                    @apply font-semibold text-base leading-paragraph md:text-xl;
+                }
+
+                /* small features */
+                .fm-card {
+                    @apply flex justify-start gap-2;
+                }
+                
 
         /* Hover */
         .text-hover {

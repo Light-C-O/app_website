@@ -32,6 +32,7 @@
     --container-md: 28rem;
     --container-xl: 36rem;
     --container-3xl: 48rem;
+    --container-4xl: 56rem;
     --container-7xl: 80rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
@@ -371,11 +372,17 @@
   .flex-1 {
     flex: 1;
   }
+  .flex-20 {
+    flex: 20;
+  }
   .flex-30 {
     flex: 30;
   }
   .flex-70 {
     flex: 70;
+  }
+  .flex-80 {
+    flex: 80;
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -391,6 +398,9 @@
   }
   .resize {
     resize: both;
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .place-content-center {
     place-content: center;
@@ -878,9 +888,24 @@
       display: flex;
     }
   }
+  .sm\:hidden {
+    @media (width >= 40rem) {
+      display: none;
+    }
+  }
+  .md\:mx-auto {
+    @media (width >= 48rem) {
+      margin-inline: auto;
+    }
+  }
   .md\:mt-0 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:mt-5 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 5);
     }
   }
   .md\:mb-0 {
@@ -923,6 +948,11 @@
       width: calc(var(--spacing) * 40);
     }
   }
+  .md\:max-w-4xl {
+    @media (width >= 48rem) {
+      max-width: var(--container-4xl);
+    }
+  }
   .md\:max-w-7xl {
     @media (width >= 48rem) {
       max-width: var(--container-7xl);
@@ -931,6 +961,11 @@
   .md\:max-w-md {
     @media (width >= 48rem) {
       max-width: var(--container-md);
+    }
+  }
+  .md\:max-w-xl {
+    @media (width >= 48rem) {
+      max-width: var(--container-xl);
     }
   }
   .md\:grid-cols-1 {
@@ -948,15 +983,42 @@
       align-items: center;
     }
   }
+  .md\:md\:items-center {
+    @media (width >= 48rem) {
+      @media (width >= 48rem) {
+        align-items: center;
+      }
+    }
+  }
   .md\:justify-end {
     @media (width >= 48rem) {
       justify-content: flex-end;
+    }
+  }
+  .md\:gap-4 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 4);
+    }
+  }
+  .md\:justify-self-center {
+    @media (width >= 48rem) {
+      justify-self: center;
+    }
+  }
+  .md\:rounded-4xl {
+    @media (width >= 48rem) {
+      border-radius: var(--radius-4xl);
     }
   }
   .md\:border-t {
     @media (width >= 48rem) {
       border-top-style: var(--tw-border-style);
       border-top-width: 1px;
+    }
+  }
+  .md\:bg-pop-100 {
+    @media (width >= 48rem) {
+      background-color: var(--color-pop-100);
     }
   }
   .md\:bg-uniscan-500 {
@@ -972,6 +1034,11 @@
   .md\:text-center {
     @media (width >= 48rem) {
       text-align: center;
+    }
+  }
+  .md\:text-left {
+    @media (width >= 48rem) {
+      text-align: left;
     }
   }
   .md\:text-start {

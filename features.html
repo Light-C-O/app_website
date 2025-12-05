@@ -27,7 +27,7 @@
     <main class="relative">
         <!-- 1st -->
         <div class="p-4 mx-auto max-w-xl relative md:max-w-7xl">
-            <div class="md:mb-5">
+            <div class="">
                 <div class="text-center">
                     <p class="capitalize font-bold text-4xl mb-4 md:text-head">All the featuers,<br><span class="bg-linear-to-r from-pop-600 to-pop-900 bg-clip-text text-transparent">right in your pocket</span></p>
                     <p class="text-gray-500 text-lg">UniScan is packed with powerful tools designed specifically for college students</p>
@@ -37,7 +37,7 @@
         <!-- end of 1st -->
 
         <!-- 2nd -->
-        <div class="bg-pop-100 md:bg-white mt-5 sm:mt-15 pt-10 md:mt-0">
+        <div class="bg-pop-100 md:mt-5 sm:mt-15 pt-10">
             <div class="flex justify-center gap-3 mx-auto md: max-w-7xl pl-4">
                 <div class="">
                     <p class="font-semibold text-base md:text-xl">Whether you're a student or just exploring colleges as a visitor, we've got you covered.</p>
@@ -50,7 +50,7 @@
 
             <!-- desktop - image -->
             <div class="hidden md:grid justify-center">
-                <img src="img/checklist_goals.svg" alt="" class="img-responsive">
+                <img src="img/checklist_goals_big.svg" alt="" class="img-responsive">
             </div>
             
         </div>
@@ -74,7 +74,7 @@
                             </div>
                         </div>
                         <!-- image illustration -->
-                        <!-- <img src="img/choose.svg" alt="choose" class="img-responsive"> -->
+                        <img src="img/choose.svg" alt="choose" class="img-responsive hidden md:block">
                         <!-- context -->
                         <div class="card-context leading-context text-pop-700 mb-2">
                             Find your school from 500+ colleges and universities.
@@ -101,7 +101,7 @@
                             </div>
                         </div>
                         <!-- image illustration -->
-                        <!-- <img src="img/online_calendar.svg" alt="online_calendar" class="img-responsive"> -->
+                        <img src="img/online_calendar.svg" alt="online_calendar" class="img-responsive hidden md:block">
                         <!-- context -->
                         <div class="card-context leading-context text-pop-700 mb-2">
                             Visualize your academic life with an integrated calendar.
@@ -128,7 +128,7 @@
                             </div>
                         </div>
                         <!-- image illustration -->
-                        <!-- <img src="img/gps_navigator.svg" alt="navigate" class="img-responsive"> -->
+                        <img src="img/gps_navigator.svg" alt="navigate" class="img-responsive hidden md:block">
                         <!-- context -->
                         <div class="card-context leading-context text-pop-700 mb-2">
                             Find your way through college life and experience new things and people.
@@ -155,7 +155,7 @@
                             </div>
                         </div>
                         <!-- image illustration -->
-                        <!-- <img src="img/projects.svg" alt="projects" class="img-responsive"> -->
+                        <img src="img/projects.svg" alt="projects" class="img-responsive hidden md:block">
                         <!-- context -->
                         <div class="card-context leading-context text-pop-700 mb-2">
                             Track the schedules, professors, and locations effortlessly.
@@ -178,10 +178,10 @@
 
         <!-- 4th -->
         <div class="bg-white">
-            <div class=" p-4 pb-0 mt-auto max-w-xl">
+            <div class=" p-4 pb-0 mt-auto mx-auto max-w-xl md:max-w-7xl">
                 <!-- images of phone -->
-                <div class="justify-center rounded-full bg-pop-200">
-                    <img src="img/swipe_options.svg" alt="swipe_options" class="">
+                <div class="bg-pop-200 justify-center rounded-full md:rounded-4xl ">
+                    <img src="img/swipe_options.svg" alt="swipe_options" class="md:mx-auto">
                 </div>
             </div>
         </div>
@@ -286,20 +286,18 @@
         <!-- end of 5th -->
         
         <!-- footer -->
-        <footer class=" bg-white md:grid justify-start ">
-            <div class="bg-pop-100 rounded-t-4xl p-4 mx-auto mt-4 max-w-md">
-                <!-- title -->
-                <div class="capitalize text-4xl text-center font-bold text-pop-900 mb-4 space-x-title mt-4">
-                    Ready for the Adventure?
-                </div>
-
-                <!-- info -->
-                <div class="flex gap-4 md:grid">
-                    <div class="grid gap-4 text-center">
-                        <p class="text-pop-900 text-xl space-x-para mb-8">
-                            Download the app to begin a new journey
-                        </p>
-                        <div class="flex justify-around">
+        <footer class=" bg-white md:block">
+            <div class="bg-pop-100 rounded-t-4xl p-4 mx-auto mt-4 max-w-md md:max-w-7xl">
+                <div class="md:grid md:grid-cols-2 md:items-center">
+                    <div class="text-center md:text-start">
+                        <!-- title -->
+                        <div class="capitalize text-4xl font-bold text-pop-900 mb-4 space-x-title mt-4">
+                        Ready for the Adventure?</div>
+                        <p class="text-pop-900 text-xl space-x-para mb-8">Download the app to begin a new journey</p>
+                    </div>
+                    <!-- info -->
+                    <div class="flex gap-4 justify-center">
+                        <div class="flex justify-between md:grid gap-4 content-center">
                             <div class="flex gap-4 items-center">
                                 <a href="https://www.apple.com/app-store/">
                                     <img src="img/app_store.svg" alt="apple store" class="rounded-md w-20" >
@@ -308,8 +306,7 @@
                                     <img src="img/google_play.svg" alt="google play" class="w-20" >
                                 </a>
                             </div>
-                            <a href="https://github.com/Light-C-O" class="flex gap-2 text-base font-medium justify-self-start place-self-center rounded-2xl text-pop-900 md:hidden">Find me in <img src="img/pop_github_vector.svg" alt="github_vector"></a>
-                            
+                            <a href="https://github.com/Light-C-O" class="flex gap-2 text-base font-medium justify-self-start place-self-center md:justify-self-center text-pop-900">Find me in <img src="img/pop_github_vector.svg" alt="github_vector"></a>
                         </div>
                     </div>
                 </div>

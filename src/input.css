@@ -51,6 +51,8 @@
                 --spacing-title: 20px;
 
         /* Text-size */
+            /* minumum */
+                --text-minimum: 16px;
             /* heading */
                 --text-head: 68px;
             /* 2ndheading */
@@ -58,8 +60,8 @@
 
         /* Line height */ 
             /* paragrapgh */
-                --leading-context: 24px;
-                --leading-paragraph: 20px;
+                --leading-context: 24px; /*150%*/
+                --leading-paragraph: 20px; /*120%*/
             /* desktop - 2nd */
                 --leading-2nd: 70px;
                 --leading-norm: 32px;

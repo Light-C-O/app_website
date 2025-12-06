@@ -89,12 +89,15 @@
                     @apply text-xl font-normal space-x-para leading-norm;
                 }
             
-            /* features */
+            /* features.html */
                 .f-between {
                     @apply flex flex-col-reverse gap-2 mb-2;
                 }
+                .flip {
+                    @apply flex-row justify-between;
+                }
                 .f-subcon {
-                    @apply font-semibold text-base leading-paragraph md:text-xl;
+                    @apply font-medium text-base leading-context md:text-xl;
                 }
 
                 /* small features */
@@ -102,6 +105,14 @@
                     @apply flex justify-start gap-2;
                 }
                 
+
+            /* celleges.html */
+                .col-img {
+                    @apply mb-4 rounded-lg w-full h-auto;
+                }
+                .col-context {
+                    @apply grid gap-2 lg:flex justify-between;
+                }
 
         /* Hover */
         .text-hover {

@@ -6,6 +6,7 @@
 /* cumtomise */
     /* themes */
     @theme {
+        
         /* Fonts */
             /* poppins - main */
             --font-poppins: "Poppins", sans-serif;
@@ -21,6 +22,7 @@
                 --color-uniscan-300: #b2f0ea;
                 --color-uniscan-200: #ccf5f1;
                 --color-uniscan-100: #e5faf8;
+                --color-uniscan-50: #f2fdfc;
 
             /* pop */
                 --color-pop-900: #0d2c33;
@@ -32,6 +34,7 @@
                 --color-pop-300: #8ceaff;
                 --color-pop-200: #b3f1ff;
                 --color-pop-100: #d9f8ff;
+                --color-pop-50: #ecfcff;
 
             /* vibe */
                 --color-vibe-900: #0d1933;
@@ -43,6 +46,7 @@
                 --color-vibe-300: #8cb0ff;
                 --color-vibe-200: #b3caff;
                 --color-vibe-100: #d9e5ff;
+                --color-vibe-50: #ecf2ff;
 
         /* Spacing - not needed */
             /* para */
@@ -122,4 +126,4 @@
         .img-responsive {
             @apply max-w-full h-auto;
         }
-    }
+    } 

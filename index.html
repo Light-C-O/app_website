@@ -11,9 +11,9 @@
 </head>
 <body class="font-poppins">
     
-    <header class="z-10 border-b-2 border-uniscan-900 bg-white sticky top-0">
+    <header class="z-10 border-b-2 border-uniscan-900 bg-white sticky top-0 pt-4 pb-2">
         <!-- header -->
-        <nav class=" mx-auto flex justify-between items-center max-w-xl  text-uniscan-900 text-2xl mt-4 mb-2 pl-4 pr-4 md:max-w-7xl">
+        <nav class=" mx-auto flex justify-between items-center max-w-xl  text-uniscan-900 text-2xl mb-2 pl-4 pr-4 md:max-w-7xl">
                 <a href="index.html" class="flex gap-2 items-center font-bold" >
                     <!-- Brand logo and name -->
                     <img src="img/logo.svg" alt="brand name">
@@ -27,12 +27,20 @@
                 <!-- dropdown -->
                 <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
                 <el-dropdown class="md:hidden inline-block">
-                    <button class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-gray-50">
+                    <button class="w-full justify-center rounded-md px-2 pt-2 pb-1 hover:shadow-xs hover:bg-uniscan-100 active:bg-uniscan-200 border border-uniscan-300">
                         <img src="img/hamburger.svg" width="24" height="24" alt="hamburger" class="grid place-self-center-safe" aria-hidden="true">
-                        
                     </button>
 
-                    <el-menu anchor="bottom end" popover class="w-56 origin-top-right rounded-md bg-white shadow-lg outline-1 outline-black/5 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+                    <el-menu 
+                    anchor="bottom end"
+                    popover 
+                    modal="false" scroll-strategy="none"
+                    class="w-56 origin-top-right rounded-md bg-white shadow-lg outline-1 outline-black/5 transition transition-discrete 
+                    [--anchor-gap:--spacing(2)] 
+                    data-closed:scale-95 data-closed:transform data-closed:opacity-0 
+                    data-enter:duration-100 data-enter:ease-out 
+                    data-leave:duration-75 data-leave:ease-in"
+                    >
                         <div class="py-1">
                         <a href="features.html" class="text-hover border-pop-700">Features</a>
                         <a href="colleges.html" class="text-hover">Colleges</a>
@@ -48,7 +56,7 @@
         <div class="p-4 mx-auto max-w-xl relative md:max-w-7xl">
             <div class="md:mb-5">
                 <div class="md:text-center">
-                    <p class="capitalize font-bold text-4xl mb-4 md:text-head">Your College Life,<br><span class="bg-linear-to-r from-uniscan-600 to-uniscan-900 bg-clip-text text-transparent">in your pocket</span></p>
+                    <p class="capitalize font-extrabold text-3xl mb-4 md:text-head md:font-extrabold">Your College Life,<br><span class="bg-linear-to-r from-uniscan-600 to-uniscan-900 bg-clip-text text-transparent">in your pocket</span></p>
                     <p class="text-gray-500 text-lg">A mobile app designed <br class="md:hidden">for students. <br class="md:hidden">By students</p>
                 </div>
 

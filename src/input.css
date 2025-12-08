@@ -64,12 +64,11 @@
                 --text-2nd: 60px;
 
         /* Line height */ 
-            /* paragrapgh */
-                --leading-context: 24px; /*150%*/
-                --leading-paragraph: 20px; /*120%*/
+            --leading-context: 150%;
+            --leading-paragraph: 150%;
             /* desktop - 2nd */
                 --leading-2nd: 70px;
-                --leading-norm: 32px;
+                --leading-norm: 120%;
     }
 
     /* components */

@@ -80,9 +80,10 @@
     --text-mobileh: 40px;
     --text-head: 68px;
     --text-2nd: 60px;
-    --leading-context: 24px;
+    --leading-context: 150%;
+    --leading-paragraph: 150%;
     --leading-2nd: 70px;
-    --leading-norm: 32px;
+    --leading-norm: 120%;
   }
 }
 @layer base {
@@ -696,9 +697,13 @@
     --tw-leading: calc(var(--spacing) * 5);
     line-height: calc(var(--spacing) * 5);
   }
-  .leading-context {
-    --tw-leading: var(--leading-context);
-    line-height: var(--leading-context);
+  .leading-norm {
+    --tw-leading: var(--leading-norm);
+    line-height: var(--leading-norm);
+  }
+  .leading-paragraph {
+    --tw-leading: var(--leading-paragraph);
+    line-height: var(--leading-paragraph);
   }
   .font-black {
     --tw-font-weight: var(--font-weight-black);
@@ -804,20 +809,6 @@
       }
     }
   }
-  .hover\:bg-vibe-50 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-vibe-50);
-      }
-    }
-  }
-  .hover\:bg-vibe-100 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-vibe-100);
-      }
-    }
-  }
   .hover\:bg-vibe-700 {
     &:hover {
       @media (hover: hover) {
@@ -872,15 +863,6 @@
   .active\:bg-vibe-500 {
     &:active {
       background-color: var(--color-vibe-500);
-    }
-  }
-  .active\:hover\:bg-vibe-100 {
-    &:active {
-      &:hover {
-        @media (hover: hover) {
-          background-color: var(--color-vibe-100);
-        }
-      }
     }
   }
   .data-closed\:scale-95 {

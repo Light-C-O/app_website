@@ -58,6 +58,7 @@
             /* minumum */
                 --text-minimum: 16px;
             /* heading */
+                --text-mobileh: 40px;
                 --text-head: 68px;
             /* 2ndheading */
                 --text-2nd: 60px;
@@ -110,10 +111,7 @@
                 }
                 
 
-            /* celleges.html */
-                .col-img {
-                    @apply mb-4 rounded-lg w-full h-auto;
-                }
+            /* colleges.html */
                 .col-context {
                     @apply grid gap-2 lg:flex justify-between;
                 }
@@ -122,8 +120,27 @@
         .text-hover {
             @apply block px-4 py-2 text-base hover:bg-gray-100 hover:text-vibe-600;
         }
+        .index-hover {
+            @apply hover:bg-uniscan-50 active:hover:bg-uniscan-100;
+        }
+        .feature-hover {
+            @apply hover:bg-pop-50 active:hover:bg-pop-100;
+        }
+        .college-hover {
+            @apply hover:bg-vibe-50 active:hover:bg-vibe-100;
+        }
+        .git-f-hover {
+            @apply px-4 py-2 rounded-2xl hover:bg-pop-50 active:bg-pop-200;
+        }
+        .git-c-hover {
+            @apply px-4 py-2 rounded-2xl hover:bg-vibe-50 active:bg-vibe-200;
+        }
 
+        /* images */
         .img-responsive {
             @apply max-w-full h-auto;
+        }
+        .col-img {
+            @apply mb-4 rounded-lg w-full h-auto;
         }
     } 

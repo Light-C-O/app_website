@@ -1,0 +1,2 @@
+**To start tailwind - in the terminal:**
+  _npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch_

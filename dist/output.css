@@ -404,6 +404,9 @@
   .justify-end {
     justify-content: flex-end;
   }
+  .justify-evenly {
+    justify-content: space-evenly;
+  }
   .justify-start {
     justify-content: flex-start;
   }
@@ -427,9 +430,6 @@
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
-  }
-  .gap-12 {
-    gap: calc(var(--spacing) * 12);
   }
   .space-x-para {
     :where(& > :not(:last-child)) {
@@ -824,13 +824,6 @@
       }
     }
   }
-  .hover\:text-vibe-100 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-vibe-100);
-      }
-    }
-  }
   .hover\:text-vibe-900 {
     &:hover {
       @media (hover: hover) {
@@ -871,6 +864,11 @@
   .active\:bg-vibe-500 {
     &:active {
       background-color: var(--color-vibe-500);
+    }
+  }
+  .active\:text-vibe-50 {
+    &:active {
+      color: var(--color-vibe-50);
     }
   }
   .data-closed\:scale-95 {

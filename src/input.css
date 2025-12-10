@@ -117,7 +117,7 @@
 
         /* Hover */
         .text-hover {
-            @apply block px-4 py-2 text-minimum hover:bg-gray-100 hover:text-vibe-600;
+            @apply block px-4 py-2 rounded-md text-minimum hover:bg-gray-100 hover:text-gray-600;
         }
         .index-hover {
             @apply hover:bg-uniscan-50 active:bg-uniscan-100;
